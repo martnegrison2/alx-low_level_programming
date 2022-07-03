@@ -6,11 +6,12 @@
  * * main-assign a random number to a variable
  *  * and prints its signed state
  *
- *   * Returns: 0 if execution was successful
+ *   * Returns: Always (success)
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
