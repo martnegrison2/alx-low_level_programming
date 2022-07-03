@@ -9,7 +9,7 @@
  *
  *     *
  *
- *      * Return: always 0 (success)
+ *      * Return: Always (success)
  *
  *       *
  */
