@@ -2,15 +2,10 @@
 
 /**
  *  * main - print letters of alphabet
- *
  *   *
- *
  *    * Description: print letters of alphabet
- *
  *     *
- *
  *      * Return: Always (success)
- *
  *       *
  */
 
