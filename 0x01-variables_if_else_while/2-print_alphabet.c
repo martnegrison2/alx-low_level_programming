@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  *  * main - print letters of alphabet
  *
  *   *
