@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main-assign a random number to a variable
  * and prints its signed state
