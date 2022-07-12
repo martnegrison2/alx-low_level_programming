@@ -8,11 +8,11 @@
  */
 
 int _atoi(char *s)
-
 {
 	unsigned int n = 0;
 	int sign = 1;
 	int flag = 0;
+
 	while (*s)
 	{
 		if (*s >= '0' && *s <= '9')
@@ -46,5 +46,5 @@ int _atoi(char *s)
 		}
 		++s;
 	}
-	return (n *sign);
+	return (n * sign);
 }
