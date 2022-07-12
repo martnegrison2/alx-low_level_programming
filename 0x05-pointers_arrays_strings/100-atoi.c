@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <limits.h>
 
 /**
@@ -12,6 +12,7 @@ int _atoi(char *s)
 	unsigned int n = 0;
 	int sign = 1;
 	int flag = 0;
+
 	while (*s)
 	{
 		if (*s >= '0' && *s <= '9')
@@ -31,19 +32,19 @@ int _atoi(char *s)
 					return (INT_MIN);
 				n *= 10;
 				if (INT_MIN + (*s - '0') > (int) -n)
-					return (INT_MIN)
+					return (INT_MIN);
 			}
 			n += (*s - '0');
 		}
 		else if (flag)
 		{
 			break;
-			else if (*s == '-')
-			{
-				sign *= -1;
-			}
-			++s;
 		}
-		return (n *sign);
+		else if (*s == '-')
+		{
+			sign *= -1;
+		}
+		++s;
 	}
+	return (n *sign);
 }
