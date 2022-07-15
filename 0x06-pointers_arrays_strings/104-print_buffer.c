@@ -17,6 +17,7 @@
 void print_buffer(char *b, int size)
 {
 	int b_pos;
+
 	int l_pos;
 
 	for (b_pos = 0; b_pos < size; b_pos += 10)
