@@ -1,2 +1,1 @@
-read me
-my readme
+This is a README
