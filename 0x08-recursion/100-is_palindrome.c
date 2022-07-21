@@ -9,7 +9,6 @@ nclude "main.h"
  */
 
 int _strlen_recursion(char *s)
-
 {
 	if (*s == '\0')
 		return (0);
@@ -30,7 +29,6 @@ int _strlen_recursion(char *s)
  */
 
 int comparator(char *s, int n1, int n2)
-
 {
 	if (*(s + n1) == *(s + n2))
 	{
@@ -50,7 +48,6 @@ int comparator(char *s, int n1, int n2)
  */
 
 int is_palindrome(char *s)
-
 {
 	if (*s == '\0')
 		return (1);
