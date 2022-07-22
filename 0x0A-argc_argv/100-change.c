@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -9,7 +10,6 @@
  *
  * Return: 0 if no errors, else
  */
-
 int main(int argc, char *argv[])	
 {
 	int a, n = 0, i, t;
