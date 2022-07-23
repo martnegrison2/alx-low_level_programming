@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
-
 	}
 
 	cents = atoi(argv[1]);
@@ -41,4 +40,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", ncoins);
 	return (0);
 }
-
