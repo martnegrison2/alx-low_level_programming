@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	num = atoi(argv[1]);
 
+	num = atoi(argv[1]);
 	if (num < 0)
 	{
 		printf("0\n");
