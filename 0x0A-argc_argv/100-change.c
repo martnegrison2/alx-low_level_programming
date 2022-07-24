@@ -2,41 +2,39 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins
+ * main -> this is a function to print its name
+ * @argc: argc parameter
  *
- * @argc: count
+ * @argv: an array of a command listed
  *
- * @argv: array
- *
- * Return: 0
+ * Return: 0 for success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[])	
 {
-	int cents, ncoins = 0;
+	int num, j, result = 0;
+	int coins[] = {25, 10, 5, 2, 1};
 
-	if (argc == 1 || argc > 2)
+	if (argc != 2)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-
-	cents = atoi(argv[1]);
-
-	while (cents > 0)
+	num = atoi(argv[1]);
+	if (num < 0)
 	{
-		if (cents >= 25)
-			cents -= 25;
-		else if (cents >= 10)
-			cents -= 10;
-		else if (cents >= 5)
-			cents -= 5;
-		else if (cents >= 2)
-			cents -= 2;
-		else if (cents >= 1)
-			cents -= 1;
-		ncoins += 1
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", ncoins);
+	for (j = 0; j < 5 && num >= 0; j++)
+	{
+		while (num >= coins[j])
+		{
+			num -= coins[j];
+			result++;
+		}
+	}
+	printf("%d\n", result);
 	return (0);
 }
+
