@@ -46,6 +46,7 @@ char *_copy(char *src)
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
+
 {
 	dog_t *snoopie;
 	char *new_name, *new_owner;
