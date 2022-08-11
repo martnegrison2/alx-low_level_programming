@@ -4,15 +4,13 @@
 
 /**
  * add_node - add nodes to the head of a linked list
- *
  * @head: link list head
- *
  * @str: string element of the linked list
- *
  * Return: number of elements
  */
 
 list_t *add_node(list_t **head, const char *str)
+
 {
 	list_t *new_node;
 	int len_str;
