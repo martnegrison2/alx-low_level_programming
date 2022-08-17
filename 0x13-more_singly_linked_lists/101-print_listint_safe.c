@@ -12,6 +12,7 @@ int findloop(const listint_t *head)
 {
 	const listint_t *start, *end;
 	start = end = head;
+
 	while (start != NULL && end != NULL)
 	{
 		start = start->next;
@@ -35,6 +36,7 @@ int count_nodes_loop(const listint_t *head)
 	int nodes = 0;
 	const listint_t *start, *end;
 	start = end = head;
+
 	while (start != NULL && end != NULL)
 	{
 		start = start->next;
@@ -68,6 +70,7 @@ size_t print_listint_safe(const listint_t *head)
 	int size = 0, loop_exist;
 	size_t nodes = 0;
 	const listint_t *temp;
+
 	if (head == NULL)
 		exit(98);
 	loop_exist = findloop(head);
